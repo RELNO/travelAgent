@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="description"
-        content="TravelAgent simulates human-like behaviors and experiences in diverse built environments">
-  <meta name="keywords" content="Urban Planning,Architectural Design,Human Behavior,Generative Agents,Simulation,Agent-Based Modeling">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>TravelAgent: Generative Agents in the Built Environment</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="TravelAgent simulates human-like behaviors and experiences in diverse built environments"
+    />
+    <meta
+      name="keywords"
+      content="Urban Planning,Architectural Design,Human Behavior,Generative Agents,Simulation,Agent-Based Modeling"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TravelAgent: Generative Agents in the Built Environment</title>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
 
@@ -22,86 +27,116 @@
     gtag('config', 'G-PYVRSFMDRL');
   </script> -->
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="./static/css/bulma.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/favicon.ico">
+    <link rel="stylesheet" href="./static/css/bulma.min.css" />
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css" />
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css" />
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"
+    />
+    <link rel="stylesheet" href="./static/css/index.css" />
+    <link rel="icon" href="./static/images/favicon.ico" />
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="./static/js/fontawesome.all.min.js"></script>
-  <script src="./static/js/bulma-carousel.min.js"></script>
-  <script src="./static/js/bulma-slider.min.js"></script>
-  <script src="./static/js/index.js"></script>
-</head>
-<body>
-
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-  <div class="navbar-menu">
-    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="https://www.media.mit.edu/groups/city-science/overview/">
-      <span class="icon">
-          <i class="fas fa-home"></i>
-      </span>
-      </a>
-
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More Research
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
+  </head>
+  <body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
         </a>
-        <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://cityscope.media.mit.edu/">
-            CityScope
+      </div>
+      <div class="navbar-menu">
+        <div
+          class="navbar-start"
+          style="flex-grow: 1; justify-content: center;"
+        >
+          <a
+            class="navbar-item"
+            href="https://www.media.mit.edu/groups/city-science/overview/"
+          >
+            <span class="icon">
+              <i class="fas fa-home"></i>
+            </span>
           </a>
-          <a class="navbar-item" href="https://www.media.mit.edu/publications/revurb/">
-            RevUrb
-          </a>
+
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              More Research
+            </a>
+            <div class="navbar-dropdown">
+              <a
+                class="navbar-item"
+                href="https://dl.acm.org/doi/abs/10.5555/AAI30331084"
+              >
+                CityScope
+              </a>
+              <a
+                class="navbar-item"
+                href="https://dl.acm.org/doi/10.1145/3334480.3382809"
+              >
+                DeepScope
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </nav>
 
-  </div>
-</nav>
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <h1 class="title is-1 publication-title">
+                TravelAgent: Generative Agents in the Built Environment
+              </h1>
+              <div class="is-size-5 publication-authors">
+                <span class="author-block">
+                  <a href="https://www.media.mit.edu/people/noyman/overview/"
+                    >Ariel Noyman</a
+                  ><sup>1*</sup>,</span
+                >
+                <span class="author-block">
+                  <a href="https://www.media.mit.edu/people/kaihu/overview/"
+                    >Kai Hu</a
+                  ><sup>2*</sup>,</span
+                >
+                <span class="author-block">
+                  <a href="https://www.media.mit.edu/people/kll/overview/"
+                    >Kent Larson</a
+                  ><sup>1</sup>,
+                </span>
+              </div>
 
+              <div class="is-size-5 publication-authors">
+                <span class="author-block"><sup>1</sup>MIT Media Lab,</span>
+                <span class="author-block"
+                  ><sup>2</sup>South China University of Technology</span
+                >
+              </div>
 
-<section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">TravelAgent: Generative Agents in the Built Environment</h1>
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              <a href="https://www.media.mit.edu/people/noyman/overview/">Ariel Noyman</a><sup>1*</sup>,</span>
-            <span class="author-block">
-              <a href="https://www.media.mit.edu/people/kaihu/overview/">Kai Hu</a><sup>2*</sup>,</span>
-            <span class="author-block">
-              <a href="https://www.media.mit.edu/people/kll/overview/">Kent Larson</a><sup>1</sup>,
-            </span>
-          </div>
-
-          <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>MIT Media Lab,</span>
-            <span class="author-block"><sup>2</sup>South China University of Technology</span>
-          </div>
-
-          <div class="column has-text-centered">
-            <div class="publication-links">
-              <!-- PDF Link. -->
-              <!-- <span class="link-block">
+              <div class="column has-text-centered">
+                <div class="publication-links">
+                  <!-- PDF Link. -->
+                  <!-- <span class="link-block">
                 <a href="./static/pdf/main.pdf"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -110,17 +145,19 @@
                   <span>Paper</span>
                 </a>
               </span> -->
-              <span class="link-block">
-                <a href=""
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
+                  <span class="link-block">
+                    <a
+                      href=""
+                      class="external-link button is-normal is-rounded is-dark"
+                    >
+                      <span class="icon">
+                        <i class="ai ai-arxiv"></i>
+                      </span>
+                      <span>arXiv</span>
+                    </a>
                   </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
-              <!-- Video Link. -->
-              <!-- <span class="link-block">
+                  <!-- Video Link. -->
+                  <!-- <span class="link-block">
                 <a href=""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -129,315 +166,469 @@
                   <span>Video</span>
                 </a>
               </span> -->
-              <!-- Code Link. -->
-              <span class="link-block">
-                <a href="https://github.com/RELNO/travel_agent.git"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
+                  <!-- Code Link. -->
+                  <span class="link-block">
+                    <a
+                      href="https://github.com/RELNO/travelAgent.git"
+                      class="external-link button is-normal is-rounded is-dark"
+                    >
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span>Code</span>
+                    </a>
                   </span>
-                  <span>Code</span>
-                  </a>
-              </span>
+                </div>
+              </div>
             </div>
-
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <h2 class="subtitle has-text-centered">
-        <span class="dnerf">TravelAgent</span> simulates human-like behaviors and experiences in diverse built environments
-      </h2>
-      <img src="./static/figs/ta-scheme.png"
-           class="teaser-image"
-           alt="TravelAgent Scheme"
-      />
-    </div>
-  </div>
-</section>
+    <section class="section">
+      <div class="container is-max-desktop">
+        <h2 class="subtitle has-text-centered">
+          <span class="dnerf">TravelAgent</span> simulates human-like behaviors
+          and experiences in diverse built environments
+        </h2>
 
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Understanding human behavior in built environments is critical for designing functional, user-centered urban spaces. Traditional approaches—such as manual observations, surveys, and simplified simulations—often fail to capture the complexity and dynamics of real-world behavior. 
-          </p>
-          <p>
-            To address these limitations, we introduce <span class="dnerf">TravelAgent</span>, a novel simulation platform that models pedestrian navigation and activity patterns across diverse indoor and outdoor environments under varying contextual and environmental conditions. TravelAgent leverages generative agents integrated into 3D virtual environments, enabling agents to process multimodal sensory inputs and exhibit human-like decision-making, behavior, and adaptation. Through experiments, including navigation, wayfinding, and free exploration, we analyze data from 100 simulations comprising 1,898 agent steps across diverse spatial layouts and agent archetypes, achieving an overall task completion rate of 76%. 
-          </p>
-          <p>
-            Using spatial, linguistic, and sentiment analyses, we show how agents perceive, adapt to, or struggle with their surroundings and assigned tasks. Our findings highlight the potential of TravelAgent as a tool for urban design, spatial cognition research, and agent-based modeling. We discuss key challenges and opportunities in deploying generative agents for the evaluation and refinement of spatial designs, proposing TravelAgent as a new paradigm for simulating and understanding human experiences in built environments.
-          </p>
+        <!-- Paper video. -->
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <video
+              id="overview"
+              autoplay
+              controls
+              muted
+              loop
+              playsinline
+              height="100%"
+            >
+              <source src="./static/videos/overview.mp4" type="video/mp4" />
+            </video>
+          </div>
         </div>
+        <!--/ Paper video. -->
+
+        <!-- Abstract. -->
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Abstract</h2>
+            <div class="content has-text-justified">
+              <p>
+                Understanding human behavior in built environments is critical
+                for designing functional, user-centered urban spaces.
+                Traditional approaches—such as manual observations, surveys, and
+                simplified simulations—often fail to capture the complexity and
+                dynamics of real-world behavior.
+              </p>
+              <p>
+                To address these limitations, we introduce
+                <strong>TravelAgent</strong>, a novel simulation platform that
+                models pedestrian navigation and activity patterns across
+                diverse indoor and outdoor environments under varying contextual
+                and environmental conditions. TravelAgent leverages generative
+                agents integrated into 3D virtual environments, enabling agents
+                to process multimodal sensory inputs and exhibit human-like
+                decision-making, behavior, and adaptation.
+              </p>
+              <p>
+                Through experiments, including navigation, wayfinding, and free
+                exploration, we analyze data from 100 simulations comprising
+                1,898 agent steps across diverse spatial layouts and agent
+                archetypes, achieving an overall task completion rate of 76%.
+              </p>
+              <p>
+                Using spatial, linguistic, and sentiment analyses, we show how
+                agents perceive, adapt to, or struggle with their surroundings
+                and assigned tasks. Our findings highlight the potential of
+                TravelAgent as a tool for urban design, spatial cognition
+                research, and agent-based modeling. We discuss key challenges
+                and opportunities in deploying generative agents for the
+                evaluation and refinement of spatial designs, proposing
+                TravelAgent as a new paradigm for simulating and understanding
+                human experiences in built environments.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--/ Abstract. -->
+
+        <section class="hero teaser">
+          <div class="container is-max-desktop">
+            <div class="hero-body">
+              <img
+                src="./static/figs/ta-scheme.png"
+                class="teaser-image"
+                alt="TravelAgent Scheme"
+              />
+            </div>
+
+            <div class="teaser-content">
+              <h3 class="title is-4">TravelAgent Scheme</h3>
+              <div class="content has-text-justified teaser-text">
+                <p>
+                  A schematic representation of the TravelAgent system. (left)
+                  TAs are initialized with various parameters defining the agent
+                  persona and its environment. (center) At each step, the agent
+                  employs Chain-of-Thought (CoT) to process sensory inputs, plan
+                  actions, and make decisions. (right) The agent executes
+                  actions within the environment and updates its internal memory
+                  based on its experiences.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
-    </div>
-    <!--/ Abstract. -->
+    </section>
 
-    <!-- Paper video. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <!-- <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div> -->
-        <video id="overview" autoplay controls muted loop playsinline height="100%">
-          <source src="./static/videos/overview.mp4"
-                  type="video/mp4">
-        </video>
-      </div>
-    </div>
-    <!--/ Paper video. -->
-  </div>
-</section>
+    <section class="section">
+      <div class="container is-max-desktop">
+        <!-- Scenarios -->
+        <div class="columns is-centered">
+          <div class="column is-full-width">
+            <h2 class="title is-3">Scenarios</h2>
 
-
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Scenarios -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Scenarios</h2>
-
-        <!-- Spatial Analysis -->
-        <!-- <h3 class="title is-4">Spatial Analysis</h3> -->
-        <div class="content has-text-justified">
-          <h3 class="title is-4">Scenario Descriptions</h3>
-          <ul id="appendix-scenarios">
-            <li><strong>Scenario 1 - Base:</strong> A bright summer morning in Kendall Square, Cambridge, MA. Modern glass buildings and bustling streets with pedestrians, cyclists, and outdoor cafés creating a lively and vibrant atmosphere.</li>
-            <li><strong>Scenario 2 - Winter:</strong> A snowy winter morning in Kendall Square, Cambridge, MA. Heavy snow blankets the streets and modern buildings, with bundled-up pedestrians, and a quiet stillness filling the air.</li>
-            <li><strong>Scenario 3 - Tokyo:</strong> A bright summer morning in Tokyo, Japan. Mix of traditional wooden buildings and modern structures. Bustling streets filled with pedestrians, cyclists, and outdoor tea houses creating a vibrant atmosphere.</li>
-            <li><strong>Scenario 4 - Night:</strong> A quiet summer nighttime streetscape in Kendall Square, Cambridge, MA. Streets are softly illuminated by warm streetlights and the gentle glow of modern office buildings with large glass facades.</li>
-            <li><strong>Scenario 5 - Persona:</strong> The agent's persona was varied between a 30-year-old female and a male around the same age. This was meant to examine whether the agent's gender influenced its decision-making process.</li>
-          </ul>
-          <h3 class="title is-4">Scenario Matrix</h3>
-          <table style="border-collapse: collapse; width: 100%;">
-            <caption>Table 1. Associations between Season, Location, Time, Persona, and Scene</caption>
-            <thead>
-                <tr style="border-bottom: 2px solid black; border-top: 2px solid black;">
+            <!-- Spatial Analysis -->
+            <!-- <h3 class="title is-4">Spatial Analysis</h3> -->
+            <div class="content has-text-justified">
+              <h3 class="title is-4">Scenario Descriptions</h3>
+              <ul id="appendix-scenarios">
+                <li>
+                  <strong>Scenario 1 - Base:</strong> A bright summer morning in
+                  Kendall Square, Cambridge, MA. Modern glass buildings and
+                  bustling streets with pedestrians, cyclists, and outdoor cafés
+                  creating a lively and vibrant atmosphere.
+                </li>
+                <li>
+                  <strong>Scenario 2 - Winter:</strong> A snowy winter morning
+                  in Kendall Square, Cambridge, MA. Heavy snow blankets the
+                  streets and modern buildings, with bundled-up pedestrians, and
+                  a quiet stillness filling the air.
+                </li>
+                <li>
+                  <strong>Scenario 3 - Tokyo:</strong> A bright summer morning
+                  in Tokyo, Japan. Mix of traditional wooden buildings and
+                  modern structures. Bustling streets filled with pedestrians,
+                  cyclists, and outdoor tea houses creating a vibrant
+                  atmosphere.
+                </li>
+                <li>
+                  <strong>Scenario 4 - Night:</strong> A quiet summer nighttime
+                  streetscape in Kendall Square, Cambridge, MA. Streets are
+                  softly illuminated by warm streetlights and the gentle glow of
+                  modern office buildings with large glass facades.
+                </li>
+                <li>
+                  <strong>Scenario 5 - Persona:</strong> The agent's persona was
+                  varied between a 30-year-old female and a male around the same
+                  age. This was meant to examine whether the agent's gender
+                  influenced its decision-making process.
+                </li>
+              </ul>
+              <h3 class="title is-4">Scenario Matrix</h3>
+              <table style="border-collapse: collapse; width: 100%;">
+                <caption>
+                  Table 1. Associations between Season, Location, Time, Persona,
+                  and Scene
+                </caption>
+                <thead>
+                  <tr
+                    style="
+                      border-bottom: 2px solid black;
+                      border-top: 2px solid black;
+                    "
+                  >
                     <th style="text-align: left; padding: 8px;">Season</th>
                     <th style="text-align: left; padding: 8px;">Location</th>
                     <th style="text-align: center; padding: 8px;">Time</th>
                     <th style="text-align: left; padding: 8px;">Persona</th>
                     <th style="text-align: left; padding: 8px;">Scene</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr style="border-bottom: 1px solid #ccc;">
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr style="border-bottom: 1px solid #ccc;">
                     <td style="padding: 8px;">Summer</td>
                     <td style="padding: 8px;">Kendall Square, Boston</td>
                     <td style="text-align: center; padding: 8px;">Morning</td>
                     <td style="padding: 8px;">30-year-old female/male</td>
                     <td style="padding: 8px;">Scene 1</td>
-                </tr>
-                <tr style="border-bottom: 1px solid #ccc;">
+                  </tr>
+                  <tr style="border-bottom: 1px solid #ccc;">
                     <td style="padding: 8px;">Winter</td>
                     <td style="padding: 8px;">Kendall Square, Boston</td>
                     <td style="text-align: center; padding: 8px;">Morning</td>
                     <td style="padding: 8px;">30-year-old female/male</td>
                     <td style="padding: 8px;">Scene 2</td>
-                </tr>
-                <tr style="border-bottom: 1px solid #ccc;">
+                  </tr>
+                  <tr style="border-bottom: 1px solid #ccc;">
                     <td style="padding: 8px;">Summer</td>
                     <td style="padding: 8px;">Tokyo</td>
                     <td style="text-align: center; padding: 8px;">Morning</td>
                     <td style="padding: 8px;">30-year-old female/male</td>
                     <td style="padding: 8px;">Scene 3</td>
-                </tr>
-                <tr style="border-bottom: 2px solid black;">
+                  </tr>
+                  <tr style="border-bottom: 2px solid black;">
                     <td style="padding: 8px;">Summer</td>
                     <td style="padding: 8px;">Kendall Square, Boston</td>
                     <td style="text-align: center; padding: 8px;">Night</td>
                     <td style="padding: 8px;">30-year-old female/male</td>
                     <td style="padding: 8px;">Scene 4</td>
-                </tr>
-            </tbody>
-        </table>
-        </div>
-      </div>  
-    </div>
-
-    <div class="columns is-centered">
-      <!-- Experiments  -->
-      <div class="column">
-        <div class="content">
-          <div class="content">
-            <h5 class="title is-5">Scene 1 - Persona</h5>
-            <video id="male" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/male.mp4"
-                      type="video/mp4">
-            </video>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
-          <h5 class="title is-5">Scene 3 - Location</h5>
-          <video id="tokyo" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/tokyo.mp4"
-                    type="video/mp4">
-          </video>
         </div>
-      </div>
 
-      <div class="column">
-        <h5 class="title is-5">Scene 2 - Season</h5>
         <div class="columns is-centered">
-          <div class="column content">
-            <video id="winter" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/winter.mp4"
-                      type="video/mp4">
-            </video>
+          <!-- Experiments  -->
+          <div class="column">
+            <div class="content">
+              <div class="content">
+                <h5 class="title is-5">Scene 1 - Persona</h5>
+                <video
+                  id="male"
+                  autoplay
+                  controls
+                  muted
+                  loop
+                  playsinline
+                  height="100%"
+                >
+                  <source src="./static/videos/male.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <h5 class="title is-5">Scene 3 - Location</h5>
+              <video
+                id="tokyo"
+                autoplay
+                controls
+                muted
+                loop
+                playsinline
+                height="100%"
+              >
+                <source src="./static/videos/tokyo.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+
+          <div class="column">
+            <h5 class="title is-5">Scene 2 - Season</h5>
+            <div class="columns is-centered">
+              <div class="column content">
+                <video
+                  id="winter"
+                  autoplay
+                  controls
+                  muted
+                  loop
+                  playsinline
+                  height="100%"
+                >
+                  <source src="./static/videos/winter.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+            <div class="content">
+              <h5 class="title is-5">Scene 4 - Time</h5>
+              <video
+                id="night"
+                autoplay
+                controls
+                muted
+                loop
+                playsinline
+                height="100%"
+              >
+                <source src="./static/videos/night.mp4" type="video/mp4" />
+              </video>
+            </div>
           </div>
         </div>
-        <div class="content">
-          <h5 class="title is-5">Scene 4 - Time</h5>
-          <video id="night" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/night.mp4"
-                    type="video/mp4">
-          </video>
+
+        <!--/ Experiments -->
+
+        <!-- Evaluation -->
+        <div class="columns is-centered">
+          <div class="column is-full-width">
+            <h2 class="title is-3">Evaluation</h2>
+
+            <!-- Spatial Analysis -->
+            <h3 class="title is-4">Spatial Analysis</h3>
+            <div class="content has-text-justified">
+              <p>
+                Spatial Analysis of `Train Station' Experiment. For each
+                scenario, we evaluate the agent's successful and failed paths.
+                If the agent reaches and recognizes the subway station by
+                declaring `stop', the path is considered successful, and the
+                agent is given a new subtask. The top left figure show both a
+                successful and a failed path in the `Base' scenario. The top row
+                in the bottom figure shows the paths of all agents in all other
+                scenarios, and the bottom row shows the spatial aggregation of
+                decision points across all scenarios. Notably, the agents in the
+                `Night' scenario have the most failed and inconsistent paths,
+                which is also reflected in more sparse decision point area.
+                Conversely, the agents in the `Winter' scenario have more
+                consistent paths, with a clear aggregation of decision points
+                early in the simulation.
+              </p>
+            </div>
+            <div class="content has-text-centered">
+              <img
+                src="./static/figs/ta-path-3D.png"
+                class="interpolation-image"
+                alt="path visualization in 3D environment"
+              />
+              <img
+                src="./static/figs/ta-paths-all-scenarios.png"
+                class="interpolation-image"
+                alt="paths in all scenarios"
+              />
+            </div>
+            <br />
+            <!--/ Spatial Analysis -->
+
+            <!-- Term Frequency Analysis -->
+            <h3 class="title is-4">Term Frequency Analysis</h3>
+            <div class="content has-text-justified">
+              <p>
+                Analysis of the 200 most frequent words in the agents' planning
+                streams, clustered by scenario. The dominant terms correspond to
+                the agents' tasks, goals, actions, and interactions with their
+                immediate surroundings. Across all scenarios, the most prevalent
+                terms are related to the agents' target and goal, such as
+                `station', `target', and `move'. The agents also reflect on the
+                shape, form, and materiality of their environment, with terms
+                like `bricks', `glass', `flat', and `building' appearing
+                frequently.
+              </p>
+            </div>
+            <div class="content has-text-centered">
+              <img
+                src="./static/figs/ta-top-words.png"
+                class="interpolation-image"
+                alt="path visualization in 3D environment"
+              />
+            </div>
+            <!--/ Term Frequency Analysis -->
+
+            <!-- Topical Modeling -->
+            <h3 class="title is-4">Topical Modeling</h3>
+            <div class="content has-text-justified">
+              <p>
+                Sentiment analysis of the agent's `thoughts' and `observations'
+                streams. Each experiment is displayed as a path with the agent's
+                decision points. The distance between each decision point refers
+                to the distance traveled in `Forward' actions. Sentiments are
+                classified into three categories: positive (blue), neutral
+                (gray), and negative (light pink) using NLTK’s
+                VADER~\citep{hutto2014vader}. In successful experiments, the red
+                dots represent the "Finish" steps, where the agent is given an
+                additional randomized subtask. Notably, in failed paths, there
+                are clear clusters of `search' actions, in which the agent aims
+                to reorient itself, usually leading to a negative sentiment. In
+                successful paths, the agent's sentiment is more positive, and
+                search steps are less frequent. In sub-tasks, mixed sentiments
+                appear, alongside some `search' clusters.
+              </p>
+            </div>
+            <div class="content has-text-centered">
+              <img
+                src="./static/figs/ta-sentiment.png"
+                class="interpolation-image"
+                alt="path visualization in 3D environment"
+              />
+            </div>
+            <!--/ Topical Modeling -->
+          </div>
         </div>
+        <!--/ Evaluation -->
+
+        <!-- Concurrent Work. -->
+        <div class="columns is-centered">
+          <div class="column is-full-width">
+            <h2 class="title is-3">Related Works</h2>
+
+            <div class="content has-text-justified">
+              <p>
+                <a href="https://arxiv.org/abs/2304.03442"
+                  >Joon Sung Park, Joseph O’Brien, Carrie Jun Cai, Meredith
+                  Ringel Morris, Percy Liang, and Michael S Bernstein.
+                  Generative agents: Interactive simulacra of human behavior. In
+                  Proceedings of the 36th annual acm symposium on user interface
+                  software and technology, pages 1–22, 2023.
+                </a>
+              </p>
+
+              <p>
+                <a href="https://www.nature.com/articles/s41598-024-53420-6"
+                  >Michal Gath-Morad, Jascha Grübel, Koen Steemers, Kerstin
+                  Sailer, Lola Ben-Alon, Christoph Hölscher, and Leonel Aguilar.
+                  The role of strategic visibility in shaping wayfinding
+                  behavior in multilevel buildings. Scientific Reports, 14
+                  (1):3735, 2024.></a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--/ Concurrent Work. -->
       </div>
-    </div>
-  
-    <!--/ Experiments -->
+    </section>
 
-    <!-- Evaluation -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Evaluation</h2>
-
-        <!-- Spatial Analysis -->
-        <h3 class="title is-4">Spatial Analysis</h3>
-        <div class="content has-text-justified">
-          <p>
-            Spatial Analysis of `Train Station' Experiment. For each scenario, we evaluate the agent's successful and failed paths. If the agent reaches and recognizes the subway station by declaring `stop', the path is considered successful, and the agent is given a new subtask. The top left figure show both a successful and a failed path in the `Base' scenario. The top row in the bottom figure shows the paths of all agents in all other scenarios, and the bottom row shows the spatial aggregation of decision points across all scenarios. Notably, the agents in the `Night' scenario have the most failed and inconsistent paths, which is also reflected in more sparse decision point area. Conversely, the agents in the `Winter' scenario have more consistent paths, with a clear aggregation of decision points early in the simulation.
-          </p>
-        </div>
-        <div class="content has-text-centered">
-          <img src="./static/figs/ta-path-3D.png"
-                  class="interpolation-image"
-                  alt="path visualization in 3D environment"
-          />
-          <img src="./static/figs/ta-paths-all-scenarios.png"
-                  class="interpolation-image"
-                  alt="paths in all scenarios"
-          />
-        </div>
-        <br/>
-        <!--/ Spatial Analysis -->
-
-        <!-- Term Frequency Analysis -->
-        <h3 class="title is-4">Term Frequency Analysis</h3>
-        <div class="content has-text-justified">
-          <p>
-            Analysis of the 200 most frequent words in the agents' planning streams, clustered by scenario. The dominant terms correspond to the agents' tasks, goals, actions, and interactions with their immediate surroundings. Across all scenarios, the most prevalent terms are related to the agents' target and goal, such as `station', `target', and `move'. The agents also reflect on the shape, form, and materiality of their environment, with terms like `bricks', `glass', `flat', and `building' appearing frequently.
-          </p>
-        </div>
-        <div class="content has-text-centered">
-          <img src="./static/figs/ta-top-words.png"
-                  class="interpolation-image"
-                  alt="path visualization in 3D environment"
-          />
-        </div>
-        <!--/ Term Frequency Analysis -->
-
-        <!-- Topical Modeling -->
-        <h3 class="title is-4">Topical Modeling</h3>
-        <div class="content has-text-justified">
-          <p>
-            Sentiment analysis of the agent's `thoughts' and `observations' streams. Each experiment is displayed as a path with the agent's decision points. The distance between each decision point refers to the distance traveled in `Forward' actions. Sentiments are classified into three categories: positive (blue), neutral (gray), and negative (light pink) using NLTK’s VADER~\citep{hutto2014vader}. In successful experiments, the red dots represent the "Finish" steps, where the agent is given an additional randomized subtask. Notably, in failed paths, there are clear clusters of `search' actions, in which the agent aims to reorient itself, usually leading to a negative sentiment. In successful paths, the agent's sentiment is more positive, and search steps are less frequent. In sub-tasks, mixed sentiments appear, alongside some `search' clusters.
-          </p>
-        </div>
-        <div class="content has-text-centered">
-          <img src="./static/figs/ta-sentiment.png"
-                  class="interpolation-image"
-                  alt="path visualization in 3D environment"
-          />
-        </div>
-        <!--/ Topical Modeling -->
-      </div>
-    </div>
-    <!--/ Evaluation -->
-
-
-    <!-- Concurrent Work. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Related Works</h2>
-
-        <div class="content has-text-justified">
-          <p>
-            <a href="https://arxiv.org/abs/2304.03442">Joon Sung Park, Joseph O’Brien, Carrie Jun Cai, Meredith Ringel Morris, Percy Liang, and Michael S Bernstein.
-              Generative agents: Interactive simulacra of human behavior. In Proceedings of the 36th annual acm symposium on
-              user interface software and technology, pages 1–22, 2023.
-          </p>
-          <p>
-            <a href="https://www.academia.edu/download/86993187/p1939.pdf">Arnaud Grignard, Núria Macià, Luis Alonso Pastor, Ariel Noyman, Yan Zhang, and Kent Larson. Cityscope andorra: A multi-level interactive and tangible agent-based visualization. In AAMAS, pages 1939–1940, 2018.
-          </p>
-          <p>
-            <a href="https://www.nature.com/articles/s41598-024-53420-6">Michal Gath-Morad, Jascha Grübel, Koen Steemers, Kerstin Sailer, Lola Ben-Alon, Christoph Hölscher, and Leonel
-              Aguilar. The role of strategic visibility in shaping wayfinding behavior in multilevel buildings. Scientific Reports, 14
-              (1):3735, 2024.</a>
-          </p>
-          <p>
-            <a href="https://arxiv.org/abs/2402.03310">Jihan Yang, Runyu Ding, Ellis Brown, Xiaojuan Qi, and Saining Xie. V-irl: Grounding virtual intelligence in real life.
-              In European Conference on Computer Vision, pages 36–55. Springer, 2025.</a>.
-          </p>
-        </div>
-      </div>
-    </div>
-    <!--/ Concurrent Work. -->
-
-  </div>
-</section>
-
-
-<section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>@article{noyman2024travelagent,
+    <section class="section" id="BibTeX">
+      <div class="container is-max-desktop content">
+        <h2 class="title">BibTeX</h2>
+        <pre><code>@article{noyman2024travelagent,
       title={TravelAgent: Generative Agents in the Built Environment},
       author={Noyman, Ariel and Hu, Kai and Larson, Kent},
       year={2024},
       journal={arXiv preprint},
     }</code></pre>
-  </div>
-</section>
+      </div>
+    </section>
 
-
-<footer class="footer">
-  <div class="container">
-    <div class="content has-text-centered">
-      <a class="icon-link" href="https://github.com/RELNO" class="external-link" disabled>
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-          <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-          <p>
-            Thanks to the <a
-              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,we were able to build our page efficiently. If you want to use or modify this code, please link back to the original source in the footer to give proper credit.
-          </p>
+    <footer class="footer">
+      <div class="container">
+        <div class="content has-text-centered">
+          <a
+            class="icon-link"
+            href="https://github.com/RELNO"
+            class="external-link"
+            disabled
+          >
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+        <div class="columns is-centered">
+          <div class="column is-8">
+            <div class="content">
+              <p>
+                This website is licensed under a
+                <a
+                  rel="license"
+                  href="http://creativecommons.org/licenses/by-sa/4.0/"
+                  >Creative Commons Attribution-ShareAlike 4.0 International
+                  License</a
+                >.
+              </p>
+              <p>
+                Thanks to the
+                <a href="https://github.com/nerfies/nerfies.github.io"
+                  >source code</a
+                >
+                of this website,we were able to build our page efficiently. If
+                you want to use or modify this code, please link back to the
+                original source in the footer to give proper credit.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</footer>
-
-</body>
+    </footer>
+  </body>
 </html>

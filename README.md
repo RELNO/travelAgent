@@ -14,6 +14,8 @@
 
 - `server/logs`: All the experiment logs will be saved in this folder for further analysis.
 
+- `analysis`: Notebooks to run the analysis in our paper.
+
 
 # Setup
 

@@ -1,0 +1,9 @@
+ezdxf
+openai
+plotly
+kaleido
+nltk
+matplotlib
+seaborn
+nbformat
+pandas

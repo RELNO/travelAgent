@@ -19,51 +19,39 @@
 
 # Setup
 
-### Interface
+Please follow these instructions to initialize the project:
 
-- prepare the environment
+- interface: [README](interface/README.md)
+- server:  [README](server/README.md)
+- analysis: [README](analysis/README.md)
 
-```bash
-cd interface
-npm install
-```
+# Run the experiments
 
-- openai api key
+The web app provides an end-to-end experimentation environment for testing and
+evaluating TravelAgents.
 
-The openai api key is not included in this repo, you'll need to prepare your own key, and paste in the `.env` file.
+## Interface
+![platform](static/figs/ta-platform.png)
 
-```
-REACT_APP_OPENAI_KEY=<your openai api key here>
-```
+- `left`:  Initial settings and inputs provided to the agent; 
+- `Bottom Left`: Output log of the Chain-ofThought process. `orange` are the agent’s observations, `green` are the agent’s memories, `purple` are the agent’s plans,`blue` are the actions/decisions. 
+- `Bottom Right`: A mini map show the path, the explored area, and current position of the agent.
+- `Top`: Panoramic street-level view of the environment. The rudimentary 3D environment is guiding an SDXL image generation model to create eye-level images, as well as to provide depth estimation, and collision information. 
 
-- run the interface
+## Settings
 
-```bash
-npm start
-```
+Settings in TravelAgent allows users to change scenarios, agents’ profiles, and tasks by simply updating a short textual prompt.
 
-### Server
-
-- prepare the environment
-
-```bash
-cd server
-pip install -r requirements.txt
-```
-
-- download the sdxl_controlnet_seg_model
-
-The model is not included in the repository. You can download the model from the following link and place it in the `sdxl_controlnet_seg_model` folder. https://huggingface.co/abovzv/sdxl_segmentation_controlnet_ade20k
-
-You might need to rename the model filename to `diffusion_pytorch_model.safetensors`. see discussion [here](https://huggingface.co/abovzv/sdxl_segmentation_controlnet_ade20k/discussions/1)
-
-- run the backend
-
-```bash
-python main.py
-```
-
-Note: if you are using gpu change the device in `main.py` to `cuda`
+- `Scenes`: the presetting senarios in our paper.
+- `RenderSwitch`: Using image generation model or not.
+- `CompassSwitch`: Using compass or not.
+- `Prompt`: The prompt for image generation model.
+- `Persona`: The persona of the LLM agent.
+- `Move`: Manully control button to move the agent.
+- `Task`: The task assigned to the agent to compelete.
+- `Seed` : Random seed for the LLM agent and the Image generation model.
+- `Experiment`: The name of the experiment and the respective log folder.
+- `Action Steps`: The maximum steps the agent can take to finish this task.
 
 
 # Citiation
